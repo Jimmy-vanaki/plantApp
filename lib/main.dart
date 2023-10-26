@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text("data"),
+          backgroundColor: Colors.white,
+          elevation: 0,
         ),
       ),
     );
