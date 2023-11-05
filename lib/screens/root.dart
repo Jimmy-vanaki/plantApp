@@ -85,7 +85,7 @@ class _RootPageState extends State<RootPage> {
           activeIndex: activeIndex,
           activeColor: Constants.themeColor,
           gapLocation: GapLocation.center,
-          notchSmoothness: NotchSmoothness.verySmoothEdge,
+          notchSmoothness: NotchSmoothness.softEdge,
           leftCornerRadius: 5,
           rightCornerRadius: 5,
           onTap: (index) => setState(() => activeIndex = index),

@@ -73,17 +73,17 @@ class _SplashScreenState extends State<SplashScreen> {
             controller: _pageController,
             children: const <Widget>[
               CreatePage(
-                image: './assets/images/plant-one.png',
+                image: './Assets/images/plant-one.png',
                 title: "Constants.titleOne",
                 description: "Constants.descriptionOne",
               ),
               CreatePage(
-                image: './assets/images/plant-two.png',
+                image: './Assets/images/plant-two.png',
                 title: "eqeqweeqweqweqweqw",
                 description: "Constants.descriptionOne",
               ),
               CreatePage(
-                image: './assets/images/plant-three.png',
+                image: './Assets/images/plant-three.png',
                 title: "eqeqweeqweqweqweqw",
                 description: "Constants.descriptionOne",
               ),
@@ -181,6 +181,7 @@ class CreatePage extends StatelessWidget {
             style: const TextStyle(
               fontFamily: 'iransans',
               color: Colors.grey,
+              
             ),
           )
         ],
