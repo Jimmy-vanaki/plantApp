@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:plantapp/const/constants.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+import 'package:plantapp/screens/cameraPage.dart';
 
 class ScanPage extends StatefulWidget {
   const ScanPage({super.key});
@@ -72,11 +74,11 @@ class _ScanPageState extends State<ScanPage> {
                     GestureDetector(
                       onTap: () {
                         debugPrint("Working11 !!!");
-                        MobileScanner(
-                          controller: cameraController,
-                          onDetect: (barcodes) {
-                            debugPrint("Working !!!");
-                          },
+                        Navigator.push(
+                          context,
+                          PageTransition(
+                              child: const CameraPage(),
+                              type: PageTransitionType.bottomToTop),
                         );
                       },
                       child: Image.asset(
